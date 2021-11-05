@@ -1,0 +1,23 @@
+{
+  "name": "database-week2",
+  "version": "1.0.0",
+  "description": "api for cyf_ecommerce",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattndross/cyf_ecommerce_api.git"
+  },
+  "author": "Matías A. Rossi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattndross/cyf_ecommerce_api/issues"
+  },
+  "homepage": "https://github.com/mattndross/cyf_ecommerce_api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.7.1"
+  }
+}
