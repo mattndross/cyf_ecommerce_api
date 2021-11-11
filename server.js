@@ -37,6 +37,14 @@ app.get("/products", (req, res) => {
   });
 });
 
+app.get("/customers/:customerId", (req, res) => {
+  const customerId = req.params.customerId;
+  pool
+    .query("SELECT * FROM customers WHERE id = $1", [customerId])
+    .then((result) => res.json(result.rows))
+    .catch((e) => console.log(e));
+});
+
 app.listen(3000, () => {
   console.log("server listenin in port 3000");
 });
